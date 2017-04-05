@@ -1,0 +1,56 @@
+.navbar {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+
+    img {
+        max-width: 150px;
+    }
+
+    .nav {
+        float: right;
+        padding: 45px 0 0;
+        margin: 0;
+
+        li {
+            display: inline;
+
+            a {
+                font-family: 'Montserrat', sans-serif;
+                font-size: 14px;
+                text-decoration: none;
+                margin: 0 0 0 30px;
+                color: #000;
+
+                &:hover {
+                    text-decoration: none;
+                    color: #198ef1;
+                    border-bottom: 2px solid #198ef1;
+                }
+            }
+        }
+    }
+
+    @media only screen and (max-width: 720px) {
+        img {
+            display: block;
+            margin: auto;
+        }
+
+        .nav {
+            float: none;
+            padding: 0;
+
+            li {
+                display: block;
+                text-align: center;
+                padding: 20px 0 0;
+
+                a {
+                    margin: 0;
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}
