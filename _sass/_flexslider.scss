@@ -1,19 +1,97 @@
-/* Fix bug "cutting off" the left and right control arrows */
+.flexslider {
 
-.flex-direction-nav li a{
-      height:50px;
-}
+    background: none;
+    border: none;
+    box-shadow: none;
+    margin: 0;
 
-
-.flexslider{
-	background:none;
-	border:none;
-	box-shadow:none;
-	margin:0px;
-
-  .slides{
-    img {
-      max-height: 700px;
+    .flex-direction-nav a.flex-next,
+    .flex-direction-nav a.flex-prev {
+        display: none;
     }
-  }
+
+    .flex-control-nav {
+        bottom: 20px;
+        z-index: 1000;
+    }
+
+    .slides img {
+            max-height: 700px;
+    }
+
+    .slide-text {
+        width: 100%;
+        text-align: center;
+        color: #FFF;
+        font-family: 'Montserrat', sans-serif;
+        top: 40%;
+        transform: translateY(-50%);
+        position: absolute;
+        z-index: 1000;
+
+        h2 {
+            font-weight: bold;
+            font-size: 5em;
+            letter-spacing: -4px;
+            margin: 0 0 15px;
+        }
+
+        p {
+            margin: 0 0 35px;
+            font-size: 1.5em;
+        }
+
+        button {
+            background-color: #198ef1;
+            border-radius: 5px;
+            border: none;
+            padding: 15px 30px;
+
+            &:hover {
+                background-color: #313131;
+            }
+
+            a {
+                color: #FFF;
+                font-size: 1.2em;
+                text-decoration: none;
+                font-family: 'Montserrat', sans-serif;
+            }
+        }
+
+        @media only screen and (max-width: 640px) {
+            h2 {
+                font-size: 4em;
+                letter-spacing: -2px;
+            }
+
+            p {
+                font-size: 1.2em;
+            }
+        }
+
+        @media only screen and (max-width: 560px) {
+            h2 {
+                font-size: 3em;
+            }
+
+            p {
+                font-size: 1em;
+            }
+        }
+
+        @media only screen and (max-width: 460px) {
+            h2 {
+                font-size: 2em;
+            }
+
+            p {
+                font-size: 0.8em;
+            }
+
+            button a {
+                font-size: 0.8em;
+            }
+        }
+    }
 }
