@@ -1,0 +1,19 @@
+/* Fix bug "cutting off" the left and right control arrows */
+
+.flex-direction-nav li a{
+      height:50px;
+}
+
+
+.flexslider{
+	background:none;
+	border:none;
+	box-shadow:none;
+	margin:0px;
+
+  .slides{
+    img {
+      max-height: 700px;
+    }
+  }
+}
