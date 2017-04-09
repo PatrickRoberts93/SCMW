@@ -1,0 +1,89 @@
+.overview {
+    background-color: #198ef1;
+    background: linear-gradient(90deg, #198ef1, #0d5fa5);
+
+    .container {
+        box-sizing: border-box;
+        padding: 5em 1em;
+        height: 100%;
+        max-width: 1200px;
+        overflow: hidden;
+        margin: 0 auto;
+
+        .overview__text {
+            box-sizing: border-box;
+            display: inline-block;
+            float: left;
+            width: 55%;
+            color: #FFF;
+            padding: 0 20px;
+
+            h2 {
+                font-family: "Montserrat", sans-serif;
+                font-weight: bold;
+                font-size: 4.5em;
+                letter-spacing: -4px;
+                margin: 0 0 15px;
+            }
+            @media only screen and (max-width: 660px) {
+                h2 {
+                    font-size: 4em;
+                    letter-spacing: -2px;
+                }
+
+                p {
+                    font-size: 1em;
+                }
+            }
+            @media only screen and (max-width: 580px) {
+                h2 {
+                    font-size: 3em;
+                }
+
+                p {
+                    font-size: 0.9em;
+                }
+            }
+            @media only screen and (max-width: 480px) {
+                h2 {
+                    font-size: 2em;
+                }
+
+                p {
+                    font-size: 0.8em;
+                }
+            }
+        }
+
+        .overview__image {
+            box-sizing: border-box;
+            display: inline-block;
+            float: left;
+            width: 45%;
+            padding: 100px 20px 0;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        @media only screen and (max-width: 960px) {
+            padding: 2em 0;
+
+            .overview__text {
+                width: 100%;
+                text-align: center;
+                float: none;
+                padding: 0 40px;
+            }
+
+            .overview__image {
+                display: block;
+                width: 80%;
+                float: none;
+                margin: 0 auto;
+                padding: 2em 0 0;
+            }
+        }
+    }
+}

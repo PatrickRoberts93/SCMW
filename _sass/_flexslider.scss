@@ -20,10 +20,10 @@
     }
 
     .slide-text {
+        font-family: "Montserrat", sans-serif;
         width: 100%;
         text-align: center;
         color: #FFF;
-        font-family: 'Montserrat', sans-serif;
         top: 40%;
         transform: translateY(-50%);
         position: absolute;
@@ -31,14 +31,14 @@
 
         h2 {
             font-weight: bold;
-            font-size: 5em;
+            font-size: 4.4em;
             letter-spacing: -4px;
             margin: 0 0 15px;
         }
 
         p {
             margin: 0 0 35px;
-            font-size: 1.5em;
+            font-size: 1.1em;
         }
 
         button {
@@ -52,27 +52,17 @@
             }
 
             a {
+                font-family: "Montserrat", sans-serif;
                 color: #FFF;
                 font-size: 1.2em;
                 text-decoration: none;
-                font-family: 'Montserrat', sans-serif;
             }
         }
 
-        @media only screen and (max-width: 640px) {
+        @media only screen and (max-width: 660px) {
             h2 {
                 font-size: 4em;
                 letter-spacing: -2px;
-            }
-
-            p {
-                font-size: 1.2em;
-            }
-        }
-
-        @media only screen and (max-width: 560px) {
-            h2 {
-                font-size: 3em;
             }
 
             p {
@@ -80,7 +70,17 @@
             }
         }
 
-        @media only screen and (max-width: 460px) {
+        @media only screen and (max-width: 580px) {
+            h2 {
+                font-size: 3em;
+            }
+
+            p {
+                font-size: .9em;
+            }
+        }
+
+        @media only screen and (max-width: 480px) {
             h2 {
                 font-size: 2em;
             }
