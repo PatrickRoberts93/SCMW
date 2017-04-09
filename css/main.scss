@@ -47,10 +47,10 @@ $on-laptop:        800px;
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
+        "vendor/normalize",
+        "vendor/flexslider",
         "base/base",
-        "base/layout",
-        "base/syntax-highlighting",
-        "components/navbar",
         "components/flexslider",
+        "layouts/navbar",
         "pages/index"
 ;
