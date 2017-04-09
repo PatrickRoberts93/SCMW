@@ -1,0 +1,25 @@
+button {
+    background-color: #198ef1;
+    border-radius: 5px;
+    border: none;
+    padding: 15px 30px;
+
+    &:hover {
+        background-color: #313131;
+    }
+
+    a {
+        font-family: "Montserrat", sans-serif;
+        font-size: .8em;
+        text-decoration: none;
+        color: #FFF;
+
+        &:active,
+        &:focus,
+        &:visited,
+        &:hover {
+          color: #FFF;
+          text-decoration: none;
+        }
+    }
+}
