@@ -1,0 +1,58 @@
+<div class="services">
+  <h2>Services</h2>
+  <div class="container">
+    <ul>
+    <li class="service">
+      <img src="/img/icon.jpg" alt="Plant Equipment">
+      <h3>Plant Equipment</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ultrices vestibulum facilisis. Cras a purus faucibus, porttitor ex in, feugiat lacus. Integer ac nibh placerat, sollicitudin dolor a, tempus justo.</p>
+    </li>
+    <li class="service">
+      <img src="/img/icon.jpg" alt="Domestic">
+      <h3>Domestic</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ultrices vestibulum facilisis. Cras a purus faucibus, porttitor ex in, feugiat lacus. Integer ac nibh placerat, sollicitudin dolor a, tempus justo.</p>
+    </li>
+    <li class="service">
+      <img src="/img/icon.jpg" alt="Rural">
+      <h3>Rural</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ultrices vestibulum facilisis. Cras a purus faucibus, porttitor ex in, feugiat lacus. Integer ac nibh placerat, sollicitudin dolor a, tempus justo.</p>
+    </li>
+    <li class="service">
+      <img src="/img/icon.jpg" alt="Stainless / Aluminium">
+      <h3>Stainless</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ultrices vestibulum facilisis. Cras a purus faucibus, porttitor ex in, feugiat lacus. Integer ac nibh placerat, sollicitudin dolor a, tempus justo.</p>
+    </li>
+
+    {% if page.url == "/services.html" %}
+
+    <li class="service">
+      <img src="/img/icon.jpg" alt="Stainless / Aluminium">
+      <h3>Stainless</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ultrices vestibulum facilisis. Cras a purus faucibus, porttitor ex in, feugiat lacus. Integer ac nibh placerat, sollicitudin dolor a, tempus justo.</p>
+    </li>
+    <li class="service">
+      <img src="/img/icon.jpg" alt="Stainless / Aluminium">
+      <h3>Stainless</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ultrices vestibulum facilisis. Cras a purus faucibus, porttitor ex in, feugiat lacus. Integer ac nibh placerat, sollicitudin dolor a, tempus justo.</p>
+    </li>
+    <li class="service">
+      <img src="/img/icon.jpg" alt="Stainless / Aluminium">
+      <h3>Stainless</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ultrices vestibulum facilisis. Cras a purus faucibus, porttitor ex in, feugiat lacus. Integer ac nibh placerat, sollicitudin dolor a, tempus justo.</p>
+    </li>
+    <li class="service">
+      <img src="/img/icon.jpg" alt="Stainless / Aluminium">
+      <h3>Stainless</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ultrices vestibulum facilisis. Cras a purus faucibus, porttitor ex in, feugiat lacus. Integer ac nibh placerat, sollicitudin dolor a, tempus justo.</p>
+    </li>
+
+    {% else %}
+
+  </div>
+  <div class="button__container">
+  <button type="button"><a href="{{ " /services " | prepend: site.baseurl }}">More Services</a></button>
+</div>
+
+{% endif %}
+
+</div>
