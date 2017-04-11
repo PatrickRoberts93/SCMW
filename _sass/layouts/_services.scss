@@ -1,60 +1,58 @@
 .services {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 4em 0;
-  h2 {
-    text-align: center;
-    font-family: "Montserrat", sans-serif;
-    font-weight: bold;
-    font-size: 4.5em;
-    letter-spacing: -4px;
-    margin: 0 0 25px 0;
-    @media only screen and (max-width: 575px) {
-      font-size: 3em;
-      letter-spacing: -2px;
-    }
-  }
-  .container {
-    box-sizing: border-box;
-    padding: 1em 1em;
-    height: 100%;
     max-width: 1200px;
-    overflow: hidden;
-  .service {
-    box-sizing: border-box;
-    display: inline-block;
-    float: left;
-    padding: 1em 1em;
-    width: 25%;
-    margin: 0 0 10px 0;
+    margin: 0 auto;
+    padding: 4em 0;
 
-    &:hover {
-      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-      border-radius: 10px;
-      transform: translatey(-10px);
-    }
-    img {
-      max-width: 64px;
-      margin: 0 0 15px 0;
-    }
-    h3 {
-      font-family: "Montserrat", sans-serif;
-      font-weight: bold;
-    }
-    p {
-      color: #9c9e9f;
+    h2 {
+        color: #000;
+        text-align: center;
+        font-size: 4.5em;
+        letter-spacing: -4px;
+        margin: 0 0 25px;
+        @media only screen and (max-width: 575px) {
+            font-size: 3em;
+            letter-spacing: -2px;
+        }
     }
 
-      @media only screen and (max-width: 860px) {
-        width: 50%;
-      }
-      @media only screen and (max-width: 575px) {
-        width: 100%;
-      }
-  }
-}
-.button__container {
-  text-align: center;
-  margin: 1em 0 0 0;
-}
+    .container {
+        padding: 1em;
+        height: 100%;
+        max-width: 1200px;
+        overflow: hidden;
+
+        .service {
+            display: inline-block;
+            float: left;
+            padding: 1em;
+            width: 25%;
+            margin: 0 0 10px;
+
+            &:hover {
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                border-radius: 10px;
+                transform: translatey(-10px);
+            }
+
+            img {
+                max-width: 64px;
+                margin: 0 0 15px;
+            }
+
+            h3 {
+                color: #000;
+            }
+            @media only screen and (max-width: 860px) {
+                width: 50%;
+            }
+            @media only screen and (max-width: 575px) {
+                width: 100%;
+            }
+        }
+    }
+
+    .button__container {
+        text-align: center;
+        margin: 1em 0 0;
+    }
 }

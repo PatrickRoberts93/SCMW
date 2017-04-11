@@ -1,16 +1,16 @@
 button {
-    background-color: #198ef1;
+
+    background-color: $brand-color;
     border-radius: 5px;
     border: none;
     padding: 15px 30px;
 
     &:hover {
-        background-color: #313131;
+        background-color: $grey-color-dark;
     }
 
     a {
-        font-family: "Montserrat", sans-serif;
-        font-size: .8em;
+        font-size: $small-font-size;
         text-decoration: none;
         color: #FFF;
 
@@ -22,4 +22,5 @@ button {
           text-decoration: none;
         }
     }
+    
 }

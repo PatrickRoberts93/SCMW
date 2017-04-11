@@ -1,79 +1,83 @@
-.flexslider {
+//Reset basic styles
 
+.flexslider {
     background: none;
     border: none;
     box-shadow: none;
     margin: 0;
+}
 
-    .flex-direction-nav a.flex-next,
-    .flex-direction-nav a.flex-prev {
-        display: none;
+
+//Set max image height
+
+.slides img {
+    max-height: 700px;
+}
+
+
+//Site Heading and subheading
+
+.slide-text {
+    width: 100%;
+    text-align: center;
+    top: 40%;
+    transform: translateY(-50%);
+    position: absolute;
+    z-index: 1000;
+
+    h2 {
+        font-size: 4.4em;
+        letter-spacing: -4px;
+        margin: 0 0 15px;
     }
 
-    .flex-control-nav {
-        bottom: 20px;
-        z-index: 1000;
-    }
-
-    .slides img {
-            max-height: 700px;
-    }
-
-    .slide-text {
-        font-family: "Montserrat", sans-serif;
-        width: 100%;
-        text-align: center;
+    p {
+        margin: 0 0 35px;
+        font-size: 1.1em;
         color: #FFF;
-        top: 40%;
-        transform: translateY(-50%);
-        position: absolute;
-        z-index: 1000;
-
+    }
+    @media only screen and (max-width: 660px) {
         h2 {
-            font-weight: bold;
-            font-size: 4.4em;
-            letter-spacing: -4px;
-            margin: 0 0 15px;
+            font-size: 4em;
+            letter-spacing: -2px;
         }
 
         p {
-            margin: 0 0 35px;
-            font-size: 1.1em;
-        }
-
-        @media only screen and (max-width: 660px) {
-            h2 {
-                font-size: 4em;
-                letter-spacing: -2px;
-            }
-
-            p {
-                font-size: 1em;
-            }
-        }
-
-        @media only screen and (max-width: 580px) {
-            h2 {
-                font-size: 3em;
-            }
-
-            p {
-                font-size: .9em;
-            }
-        }
-
-        @media only screen and (max-width: 480px) {
-            h2 {
-                font-size: 2em;
-            }
-
-            p {
-                font-size: 0.8em;
-            }
-
-            button a {
-                font-size: 0.8em;
-            }
+            font-size: 1em;
         }
     }
+    @media only screen and (max-width: 580px) {
+        h2 {
+            font-size: 3em;
+        }
+
+        p {
+            font-size: 0.9em;
+        }
+    }
+    @media only screen and (max-width: 480px) {
+        h2 {
+            font-size: 2em;
+        }
+
+        p {
+            font-size: 0.8em;
+        }
+    }
+}
+
+
+//Remove Next and Previous Arrows
+
+.flex-direction-nav a.flex-next,
+.flex-direction-nav a.flex-prev {
+    display: none;
+}
+
+
+// Move "dot" slider control on top of images
+
+.flex-control-nav {
+    bottom: 20px;
+    z-index: 1000;
 }

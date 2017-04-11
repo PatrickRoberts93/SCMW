@@ -1,8 +1,7 @@
 ///////////////// OVERVIEW ////////////////
 
 .overview {
-    background-color: #198ef1;
-    background: linear-gradient(90deg, #198ef1, #0d5fa5);
+    background: linear-gradient(90deg, $brand-color, darken($brand-color, 25%));
 
     .container {
         box-sizing: border-box;
