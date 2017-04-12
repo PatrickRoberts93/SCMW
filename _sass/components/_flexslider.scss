@@ -36,6 +36,9 @@
         font-size: 1.1em;
         color: #FFF;
     }
+
+    //Make responsive
+
     @media only screen and (max-width: 660px) {
         h2 {
             font-size: 4em;
@@ -46,6 +49,7 @@
             font-size: 1em;
         }
     }
+
     @media only screen and (max-width: 580px) {
         h2 {
             font-size: 3em;

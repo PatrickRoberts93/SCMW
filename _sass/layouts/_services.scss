@@ -1,7 +1,7 @@
 .services {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 4em 0;
+    padding: 4em 1em;
 
     h2 {
         color: #000;
@@ -14,45 +14,38 @@
             letter-spacing: -2px;
         }
     }
+}
 
-    .container {
-        padding: 1em;
-        height: 100%;
-        max-width: 1200px;
-        overflow: hidden;
+.service {
+    display: inline-block;
+    float: left;
+    padding: 1em;
+    width: 25%;
+    margin: 0 0 10px;
 
-        .service {
-            display: inline-block;
-            float: left;
-            padding: 1em;
-            width: 25%;
-            margin: 0 0 10px;
-
-            &:hover {
-                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-                border-radius: 10px;
-                transform: translatey(-10px);
-            }
-
-            img {
-                max-width: 64px;
-                margin: 0 0 15px;
-            }
-
-            h3 {
-                color: #000;
-            }
-            @media only screen and (max-width: 860px) {
-                width: 50%;
-            }
-            @media only screen and (max-width: 575px) {
-                width: 100%;
-            }
-        }
+    &:hover {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        border-radius: 10px;
+        transform: translatey(-10px);
     }
 
-    .button__container {
-        text-align: center;
-        margin: 1em 0 0;
+    img {
+        max-width: 64px;
+        margin: 0 0 15px;
     }
+
+    h3 {
+        color: #000;
+    }
+    @media only screen and (max-width: 860px) {
+        width: 50%;
+    }
+    @media only screen and (max-width: 575px) {
+        width: 100%;
+    }
+}
+
+.button__container {
+    text-align: center;
+    margin: 1em 0 0;
 }

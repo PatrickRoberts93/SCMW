@@ -1,10 +1,13 @@
 .navbar {
+
     max-width: 1200px;
     margin: 0 auto;
     padding: 15px;
 
+    //Make navbar responsive
     @media only screen and (max-width: 720px) {
-        img {
+
+        .logo {
             display: block;
             margin: auto;
         }
@@ -17,19 +20,21 @@
                 display: block;
                 text-align: center;
                 padding: 20px 0 0;
+            }
 
-                a {
-                    margin: 0;
-                    font-size: .6em;
-                }
+            li a {
+                margin: 0;
+                font-size: .6em;
             }
         }
     }
 }
 
+
 .logo {
     max-width: 120px;
 }
+
 
 .nav-menu {
     float: right;
@@ -38,18 +43,18 @@
 
     li {
         display: inline;
+    }
 
-        a {
-            font-size: 0.7em;
+    li a {
+        font-size: 0.7em;
+        text-decoration: none;
+        margin: 0 0 0 30px;
+        color: #000;
+
+        &:hover {
             text-decoration: none;
-            margin: 0 0 0 30px;
-            color: #000;
-
-            &:hover {
-                text-decoration: none;
-                color: $brand-color;
-                border-bottom: 2px solid $brand-color;
-            }
+            color: $brand-color;
+            border-bottom: 2px solid $brand-color;
         }
     }
 }
