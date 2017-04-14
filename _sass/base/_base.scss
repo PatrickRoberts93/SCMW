@@ -102,10 +102,20 @@ li {
 /**
  * Headings
  */
-h1, h2, h3, h4, h5, h6 {
+h1, h2, {
+    font-family: $heading-font-family;
+    font-size: 4.5em;
     font-weight: bold;
+    letter-spacing: -4px;
     color: #FFF;
-    font-family: $secondary-font-family;
+
+}
+
+h3 {
+  font-family: $heading-font-family;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #000;
 }
 
 
@@ -114,17 +124,12 @@ h1, h2, h3, h4, h5, h6 {
  * Links
  */
 a {
-    font-family: $secondary-font-family;
+    font-family: $heading-font-family;
     color: $brand-color;
     text-decoration: none;
 
-    &:visited {
-        color: darken($brand-color, 15%);
-    }
-
     &:hover {
         color: $text-color;
-        text-decoration: underline;
     }
 }
 
