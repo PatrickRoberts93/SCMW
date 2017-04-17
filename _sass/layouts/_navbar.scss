@@ -1,33 +1,12 @@
+.toggle-nav {
+    display:none;
+}
+
 .navbar {
 
     max-width: 1400px;
     margin: 0 auto;
     padding: 15px;
-
-    //Make navbar responsive
-    @media only screen and (max-width: 720px) {
-
-        .logo {
-            display: block;
-            margin: auto;
-        }
-
-        .nav-menu {
-            float: none;
-            padding: 0;
-
-            li {
-                display: block;
-                text-align: center;
-                padding: 20px 0 0;
-            }
-
-            li a {
-                margin: 0;
-                font-size: .6em;
-            }
-        }
-    }
 }
 
 
@@ -36,7 +15,7 @@
 }
 
 
-.nav-menu {
+.menu {
     float: right;
     padding: 35px 0 0;
     margin: 0;
@@ -56,5 +35,57 @@
             color: $brand-color;
             border-bottom: 2px solid $brand-color;
         }
+    }
+}
+
+//Make navbar responsive
+@media only screen and (max-width: 720px) {
+    .logo {
+        display: block;
+        margin: auto;
+    }
+
+    .menu {
+        display: inline-block;
+        float: none;
+        width: 100%;
+        padding: 15px 0 0;
+    }
+
+    .menu ul.active {
+        display: none;
+    }
+
+    .menu ul {
+        width: 25%;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .menu li {
+        float: none;
+        display: block;
+    }
+
+    .menu li a {
+        display: block;
+        margin: 15px 0;
+    }
+
+    .toggle-nav {
+        padding: 40px 40px 0 0;
+        float: left;
+        display: inline-block;
+        color: $brand-color;
+        font-size: 40px;
+        transition: color linear 0.15s;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    .toggle-nav.active,
+    .toggle-nav:hover {
+        color: $grey-color;
     }
 }
