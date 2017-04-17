@@ -1,29 +1,58 @@
 //Reset basic styles
 
 .flexslider {
-    background: none;
-    border: none;
-    box-shadow: none;
-    margin: 0;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  border: 0px;
+  overflow: hidden;
 }
 
 
-//Set max image height
+//Slide Images
 
-.slides img {
-    max-height: 700px;
+
+li.slide1 {
+  background-image: url("/img/home-slide1.jpg");
 }
 
+li.slide2 {
+  background-image: url("/img/home-slide2.jpg");
+}
+
+li.slide3 {
+  background-image: url("/img/home-slide3.jpg");
+}
+
+.flexslider .slides > li {
+  background-position: center;
+  height: 100%;
+  width: 100%;
+  display: none;
+  background-size: cover;
+}
+
+.flexslider-container,
+.flexslider .slides,
+.flex-viewport {
+    height: 100%;
+}
+
+ul.slides {
+  margin: 0;
+  padding: 0;
+}
 
 //Site Heading and subheading
 
 .slide-text {
-    width: 100%;
-    text-align: center;
-    top: 40%;
-    transform: translateY(-50%);
-    position: absolute;
-    z-index: 1000;
+  background: rgba(0, 0, 0, 0.5);
+  width: 60%;
+  border-radius: 10px;
+  text-align: center;
+  padding: 1em 2em 2em 2em;
+  margin: 5em auto;
 
     h2 {
         margin: 0 0 15px;
@@ -37,9 +66,9 @@
 
     //Make responsive
 
-    @media only screen and (max-width: 660px) {
+    @media only screen and (max-width: 1260px) {
         h2 {
-            font-size: 4em;
+            font-size: 3em;
             letter-spacing: -2px;
         }
 
@@ -48,18 +77,20 @@
         }
     }
 
-    @media only screen and (max-width: 580px) {
+    @media only screen and (max-width: 768px) {
+      margin: 3em auto;
+      width: 100%;
         h2 {
-            font-size: 3em;
+            font-size: 2em;
         }
 
         p {
             font-size: 0.9em;
         }
     }
-    @media only screen and (max-width: 480px) {
+    @media only screen and (max-width: 450px) {
         h2 {
-            font-size: 2em;
+            font-size: 1.5em;
         }
 
         p {
@@ -82,4 +113,12 @@
 .flex-control-nav {
     bottom: 20px;
     z-index: 1000;
+}
+
+ol.flex-control-nav.flex-control-paging li a {
+background: #FFF;
+
+&:hover {
+  background: $grey-color;
+}
 }
