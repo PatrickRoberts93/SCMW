@@ -1,0 +1,43 @@
+.about-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 5em 2em;
+    position: relative;
+}
+
+.about-text {
+    width: 40%;
+    float: left;
+    text-align: center;
+
+    h3 {
+        font-size: 3em;
+        margin: 0 0 20px;
+    }
+
+    p {
+        line-height: 1.6em;
+    }
+}
+
+#about-img {
+    width: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 2em;
+}
+@media only screen and (max-width: 1000px) {
+    .about-text {
+        width: 100%;
+        margin: 0 0 20px;
+    }
+
+    #about-img {
+        width: 100%;
+        position: static;
+        transform: none;
+    }
+}
