@@ -5,6 +5,7 @@
     max-width: 1400px;
     margin: 0 auto;
     padding: 4em 1em;
+    overflow: hidden;
 
     h2 {
         color: #000;
@@ -22,7 +23,7 @@
     float: left;
     padding: 1em;
     width: 25%;
-    margin: 0 0 10px;
+    margin: 0 0 50px;
 
     &:hover {
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
