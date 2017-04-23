@@ -3,70 +3,48 @@
 }
 
 .container {
-    padding: 5em 1em;
     max-width: 1400px;
     overflow: hidden;
     margin: 0 auto;
+    padding: 5em 2em;
+    position: relative;
     @media only screen and (max-width: 960px) {
         padding: 2em 0;
     }
 }
 
-.overview__text {
-    display: inline-block;
+
+.about-text {
+    width: 50%;
     float: left;
-    width: 55%;
-    color: #FFF;
     padding: 0 20px;
-
     h2 {
-        margin: 0 0 15px;
+        margin: 0 0 20px;
     }
-    @media only screen and (max-width: 960px) {
-        width: 100%;
-        text-align: center;
-        float: none;
-        padding: 0 40px;
 
-        h2 {
-            font-size: 4em;
-            letter-spacing: -2px;
-        }
-
-        p {
-            font-size: 1em;
-        }
-    }
-    @media only screen and (max-width: 580px) {
-        h2 {
-            font-size: 3em;
-        }
-
-        p {
-            font-size: 0.9em;
-        }
-    }
-    @media only screen and (max-width: 480px) {
-        h2 {
-            font-size: 2em;
-        }
-
-        p {
-            font-size: 0.8em;
-        }
+    p {
+        line-height: 1.6em;
+        color: #FFF;
     }
 }
 
-.overview__image {
-    display: inline-block;
-    float: left;
-    width: 45%;
-    padding: 100px 20px 0;
-    @media only screen and (max-width: 960px) {
-        display: block;
-        width: 80%;
-        float: none;
-        margin: 0 auto;
-        padding: 2em 0 0;
+#about-img {
+    width: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 2em;
+}
+@media only screen and (max-width: 1000px) {
+    .about-text {
+        width: 100%;
+        margin: 0 0 20px;
+    }
+
+    #about-img {
+        width: 100%;
+        position: static;
+        transform: none;
     }
 }
