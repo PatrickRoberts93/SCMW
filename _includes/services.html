@@ -13,22 +13,22 @@
 
     <ul>
     <li class="service">
-      <img src="/img/icon.jpg" alt="Plant Equipment">
+      <img src="img/icon.jpg" alt="Plant Equipment">
       <h3>Plant Equipment</h3>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ultrices vestibulum facilisis. Cras a purus faucibus, porttitor ex in, feugiat lacus. Integer ac nibh placerat, sollicitudin dolor a, tempus justo.</p>
     </li>
     <li class="service">
-      <img src="/img/icon.jpg" alt="Domestic">
+      <img src="img/icon.jpg" alt="Domestic">
       <h3>Domestic</h3>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ultrices vestibulum facilisis. Cras a purus faucibus, porttitor ex in, feugiat lacus. Integer ac nibh placerat, sollicitudin dolor a, tempus justo.</p>
     </li>
     <li class="service">
-      <img src="/img/icon.jpg" alt="Rural">
+      <img src="img/icon.jpg" alt="Rural">
       <h3>Rural</h3>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ultrices vestibulum facilisis. Cras a purus faucibus, porttitor ex in, feugiat lacus. Integer ac nibh placerat, sollicitudin dolor a, tempus justo.</p>
     </li>
     <li class="service">
-      <img src="/img/icon.jpg" alt="Stainless / Aluminium">
+      <img src="img/icon.jpg" alt="Stainless / Aluminium">
       <h3>Stainless</h3>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ultrices vestibulum facilisis. Cras a purus faucibus, porttitor ex in, feugiat lacus. Integer ac nibh placerat, sollicitudin dolor a, tempus justo.</p>
     </li>
@@ -36,31 +36,31 @@
     {% if page.url == "/services.html" %}
 
     <li class="service">
-      <img src="/img/icon.jpg" alt="Balustrades">
+      <img src="img/icon.jpg" alt="Balustrades">
       <h3>Balustrades</h3>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ultrices vestibulum facilisis. Cras a purus faucibus, porttitor ex in, feugiat lacus. Integer ac nibh placerat, sollicitudin dolor a, tempus justo.</p>
     </li>
     <li class="service">
-      <img src="/img/icon.jpg" alt="Custom Gates">
+      <img src="img/icon.jpg" alt="Custom Gates">
       <h3>Custom Gates</h3>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ultrices vestibulum facilisis. Cras a purus faucibus, porttitor ex in, feugiat lacus. Integer ac nibh placerat, sollicitudin dolor a, tempus justo.</p>
     </li>
     <li class="service">
-      <img src="/img/icon.jpg" alt="On Site Fabrication">
+      <img src="img/icon.jpg" alt="On Site Fabrication">
       <h3>On Site Fabrication</h3>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ultrices vestibulum facilisis. Cras a purus faucibus, porttitor ex in, feugiat lacus. Integer ac nibh placerat, sollicitudin dolor a, tempus justo.</p>
     </li>
     <li class="service">
-      <img src="/img/icon.jpg" alt="General Welding">
+      <img src="img/icon.jpg" alt="General Welding">
       <h3>General Welding</h3>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ultrices vestibulum facilisis. Cras a purus faucibus, porttitor ex in, feugiat lacus. Integer ac nibh placerat, sollicitudin dolor a, tempus justo.</p>
     </li>
 
     {% else %}
 
-
+  </ul>
   <div class="button__container">
-  <button type="button"><a href="{{ " /services " | prepend: site.baseurl }}">More Services</a></button>
+  <a class="button" href="{{ "/services" | prepend: site.baseurl }}">More Services</a>
 </div>
 
 {% endif %}
