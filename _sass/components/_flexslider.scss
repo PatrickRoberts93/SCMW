@@ -14,27 +14,27 @@
 
 
 li.slide1 {
-  background-image: url("/img/home-slide1.jpg");
+  background-image: url($baseurl + "/img/home-slide1.jpg");
 }
 
 li.slide2 {
-  background-image: url("/img/home-slide2.jpg");
+  background-image: url($baseurl + "/img/home-slide2.jpg");
 }
 
 li.slide3 {
-  background-image: url("/img/home-slide3.jpg");
+  background-image: url($baseurl + "/img/home-slide3.jpg");
 }
 
 li.slide4 {
-  background-image: url("/img/services.jpg");
+  background-image: url($baseurl + "/img/services.jpg");
 }
 
 li.slide5 {
-  background-image: url("/img/projects.jpg");
+  background-image: url($baseurl + "/img/projects.jpg");
 }
 
 li.slide6 {
-  background-image: url("/img/contact.jpg");
+  background-image: url($baseurl + "/img/contact.jpg");
 }
 
 li.slide1, li.slide2, .slide3 {
