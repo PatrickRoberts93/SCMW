@@ -40,6 +40,11 @@ li.slide6 {
 li.slide1, li.slide2, .slide3 {
   .slide-text {
     padding: 1em 2em 2em 2em;
+
+    @media only screen and (max-width: 570px) {
+      padding: 1em;
+    }
+
   }
 }
 
@@ -72,48 +77,17 @@ ul.slides {
   padding: 5em;
   margin: 5em auto;
 
+  @media only screen and (max-width: 570px) {
+    padding: 1em;
+  }
+
     h2 {
         margin: 0 0 15px;
     }
 
     p {
         margin: 0 0 35px;
-        font-size: 1.1em;
         color: #FFF;
-    }
-
-    //Make responsive
-
-    @media only screen and (max-width: 1260px) {
-        h2 {
-            font-size: 3em;
-            letter-spacing: -2px;
-        }
-
-        p {
-            font-size: 1em;
-        }
-    }
-
-    @media only screen and (max-width: 768px) {
-      margin: 3em auto;
-      width: 100%;
-        h2 {
-            font-size: 2em;
-        }
-
-        p {
-            font-size: 0.9em;
-        }
-    }
-    @media only screen and (max-width: 450px) {
-        h2 {
-            font-size: 1.5em;
-        }
-
-        p {
-            font-size: 0.8em;
-        }
     }
 }
 
