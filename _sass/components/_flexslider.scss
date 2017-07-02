@@ -25,6 +25,24 @@ li.slide3 {
   background-image: url("/img/home-slide3.jpg");
 }
 
+li.slide4 {
+  background-image: url("/img/services.jpg");
+}
+
+li.slide5 {
+  background-image: url("/img/projects.jpg");
+}
+
+li.slide6 {
+  background-image: url("/img/contact.jpg");
+}
+
+li.slide1, li.slide2, .slide3 {
+  .slide-text {
+    padding: 1em 2em 2em 2em;
+  }
+}
+
 .flexslider .slides > li {
   background-position: center;
   height: 100%;
@@ -51,7 +69,7 @@ ul.slides {
   width: 60%;
   border-radius: 10px;
   text-align: center;
-  padding: 1em 2em 2em 2em;
+  padding: 5em;
   margin: 5em auto;
 
     h2 {

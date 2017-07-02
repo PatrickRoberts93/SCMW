@@ -1,3 +1,15 @@
+.project-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 5em 0;
+
+  .project {
+      background: none;
+      padding: 2em;
+    }
+}
+
 .projects {
   padding: 5em 0;
   overflow: hidden;
@@ -11,11 +23,25 @@
 }
 
 .project {
-  width: calc(100% / 3);
-  float: left;
-  display: inline-block;
-  position: relative;
-  background: #000;
+
+    background: #000;
+    width: calc(100% / 3);
+    float: left;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    h3 {
+      display: inline-block;
+      margin: 1em 0 .5em 0;
+
+      &:hover {
+        color: $brand-color;
+      }
+    }
+
+    &:hover img {
+      opacity: 1;
+    }
 
   @media only screen and (max-width: 860px) {
     width: 50%;
@@ -36,6 +62,7 @@
   span {
     position: absolute;
     top: 0;
+    left: 5px;
     margin: 50px 30px;
     padding: 0 0 10px 0;
     border-bottom: 3px solid $brand-color;
